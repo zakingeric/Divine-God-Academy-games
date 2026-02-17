@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1> DGC JSS2 X<sub>s</sub>AND O<sub>s</sub></h1>
+
+<div class="mode">
+    <label>
+        <input type="radio" name="mode" checked onchange="setMode(false)">
+        Play vs Friend
+    </label>
+
+    <label>
+        <input type="radio" name="mode" onchange="setMode(true)">
+        Play vs Computer
+    </label>
+</div>
+
+<div class="board">
+    <button class="cell" onclick="play(0)"></button>
+    <button class="cell" onclick="play(1)"></button>
+    <button class="cell" onclick="play(2)"></button>
+    <button class="cell" onclick="play(3)"></button>
+    <button class="cell" onclick="play(4)"></button>
+    <button class="cell" onclick="play(5)"></button>
+    <button class="cell" onclick="play(6)"></button>
+    <button class="cell" onclick="play(7)"></button>
+    <button class="cell" onclick="play(8)"></button>
+</div>
+
+<div id="status">Player X's turn</div>
+
+<button onclick="resetGame()">Restart Game</button>
+
+<!-- Optional Sound -->
+<audio id="winSound" src="win.mp3"></audio>
+
+<script src="script.js"></script>
+    <footer>MADE BY JSS2 STUDENT OF DIVINE GOD COLLEGE 2026</footer>
+
+</body>
+</html>
